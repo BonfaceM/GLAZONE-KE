@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlaZone - Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="brand">
+                        <div class="brand-icon">
+                            <span class="material-symbols-outlined">token</span>
+                        </div>
+                        <h2 class="brand-name">GlaZone</h2>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <label class="search-bar">
+                        <div class="search-icon">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input type="text" placeholder="Search products..." class="search-input">
+                    </label>
+                </div>
+
+                <div class="nav-right">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="nav-actions">
+                        <button class="icon-btn cart-btn">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            <span class="cart-badge"></span>
+                        </button>
+                        <button class="icon-btn theme-toggle" id="themeToggle">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-container">
+                <section class="hero">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Upgrade Your <span class="text-primary">Workspace</span>
+                            </h1>
+                            <h2 class="hero-subtitle">
+                                Premium gadgets for maximum productivity. Discover our latest collection of ergonomic tools designed to boost your efficiency and comfort.
+                            </h2>
+                            <button class="btn-primary">Explore Collection</button>
+                        </div>
+                        <div class="hero-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIG5-a3qw-w1tMk5kc0eAvpvqnxMr8z6xD0HEpeg5nv8ovXbqI2dMu_QyR00GnUbFNS6ik1n72Yw4-k6yoOKzOZU4rq51-5tqAPv_9_WCHAXIbbHHPpCVn626Qxxihx5okm8HmtI28yswfx_rk51LN465QTFsAu02RkGJ1-znnk91hRo5eYLd3v6Vf24LETWTl8_nWCFgaEu-JYYqnHse3qVwu1Ofow6nv3IrtwkqD0e4GsNhcRhwLOYEugNaxeuHQwsttEpLS_ZEX');"></div>
+                    </div>
+                </section>
+
+                <section class="filters-section">
+                    <div class="filters-header">
+                        <h2 class="section-title">Featured Products</h2>
+                        <div class="sort-dropdown">
+                            <span class="sort-label">Sort by:</span>
+                            <button class="sort-btn">
+                                Popular <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="category-chips">
+                        <button class="chip chip-active" data-category="all">All Products</button>
+                        <button class="chip" data-category="electronics">Electronics</button>
+                        <button class="chip" data-category="accessories">Accessories</button>
+                        <button class="chip" data-category="home-office">Home Office</button>
+                        <button class="chip" data-category="wearables">Wearables</button>
+                    </div>
+                </section>
+
+                <section class="products-section">
+                    <div class="products-grid">
+                        <div class="product-card" data-category="electronics">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBuoQtn27qx-38uUV3VTUAf_G933_2zdaD5lpZkVUTMUjn-h8SumJ0wUy80LnB3oEfHjNjlJb3WpvuU8rBiTWad0m5B4RJ3-c0N0wC1KZA8rhyRJWksijS_iXaOjW238I_Y7rtZ0pZw2XtbsL6MohvwEo7i9zWWESs_6hai2grGLY4EL4rvMWltmxDIm2Y4AtG1iqowb8Uz8KO8vrt-1ElxZqWf2eaxFHd4byUymp-mGMdSfx9Oa0kHyzNJWTq3YTsMxYYcJm2BRjp');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">Wireless Headphones</h3>
+                                    <p class="product-price">$299.00</p>
+                                </div>
+                                <p class="product-description">High-fidelity audio with active noise cancellation.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9migMBruE8eYTM0JNYZ0mThw-7r2ulWaEtfDMCynjdzlzfj1oOxAkbHUws9iWYKnhq--VJk6n_riB56XNVJgCvOk6N9-DrkZZK4FiKKEjvppsB7qBN_g84bAa-2h3LqG9RkXah7dqlOsZMxf2FsronvlFlNx7NH4wYte9eyc7QyfHIVIZBtOqOS25rXHluCbREJnUkXTOhAGBD8LJ8M4-VeV1yRZSAYs9hysh7WdgFnMRY2e0EGA5Nb7eukZ_JlJ_wtVeAY9ItMY-');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">Mechanical Keypad</h3>
+                                    <p class="product-price">$120.00</p>
+                                </div>
+                                <p class="product-description">Tactile switches for the ultimate typing experience.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="electronics">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtk_7Z7wJsgM89qrEisZUy0ljPVW1TS-sfINCNI-WxfK791LvqgbUJVvyCgD4WavIUCwytWsFEdTHRxmIq_OAylToeTcGEtNcEUOqEbvhGuCMYFStqgq_284qanBS3N9XICl3LzBStslRj76_V26NZAC-_qN4YM1QUPUIEIbTsSBJSsL5i3QCgd3t6btL_nV9yhT2Ls4qgOwxDNWmaDEiGWU6d1AIgAbMy-npIPu9yI_3xW5cwx7OPHnyfaNiZ-o5Zj43KdginsWdn');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">4K Ultra Monitor</h3>
+                                    <p class="product-price">$450.00</p>
+                                </div>
+                                <p class="product-description">Crystal clear display for creative professionals.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBowSXZnsTVByA3ckUib19Ji04KGLPs7kGwcq47ANnc7E4XMtC2aOREEgDRJef-ZbZH8Iacza6mIeyaIA_3Y5VOgM1Gv7dsrnYgMyhJ4hzq9o3Wfn1WYcidLupJKfhq7CPCNBoKjafH2DxddYGoP-A2ZT-2MibgEqc9ETy-aagioioOr_BeRjUbq3leyJG6J5WOYJ60Sot5jy2bv96yibbgiFiCTImW_odeO2spXunKQeX3N8bR5bZr5ypyhxusN770be8BF1o0LOwr');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">Ergonomic Mouse</h3>
+                                    <p class="product-price">$85.00</p>
+                                </div>
+                                <p class="product-description">Designed to reduce strain during long work hours.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="wearables">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8DJ5rlVepOqtrjU8By7UZ7wH2NAHtGEs0NPbrpYuFF8wceHau0-mcA65Bg1hO-4zjIH91dFS5Q973Sk1x1JxHVa5DEGNJxV8spxOcor-q8HUjzPdS7pL5kA4V50iyVugkH_JLrIRXkIUV2ih2-vJ8bOVo6IrfqDYoE-SXC22Y4X7yu7f5kcQlTDFJmWEtsONmOOXnN7eRQq2HsZ1qsZlcsJHIVQhiPvAYMA7ty-55aH3u-hdV7FQZEYrC3kz8Sf1dyUpGIA1utNq6');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">Smart Watch Series 7</h3>
+                                    <p class="product-price">$399.00</p>
+                                </div>
+                                <p class="product-description">Stay connected and track your fitness goals.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="home-office">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBk8bBoEnpYFjSns2UmBUGOtn_mXx8sID6T5L0cqEvGRkXTwXi1e_l7QvvUSarXgzuNufXSRxqD6CfSzpnj1XIw4H_oW7aSunwcVKLm8gw7qmbA-YH33hHf_1hqfGaZF7c_EOUcthCbsNeh4c3KfwJB6MrlVBC5inqHfwOKX88gbmb2EyTzPiEP6vvsYl24CmSVGwRzJ8jHAxa_Bz0VDx04oxfgM7_bvaZ3ef8atyNK-UMH1lY8AmsjIqJbQOS4TNepGysk9F6CI7L5');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">Aluminum Laptop Stand</h3>
+                                    <p class="product-price">$49.00</p>
+                                </div>
+                                <p class="product-description">Elevate your screen for better posture.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="electronics">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhivrEiy1LAz-W35GQA3dzz9y1q7tcpnd5q_gGBA8sX4dgjUjhzEkR534rXw-q4u3ykMhj53NnMhjLghIXM2cm9u1qoj741qCqdZ8xYvMXRQzjD-PMGMjorXdaQJYkwgLyUhK4iPBasuPU1E3nMRH_mYuzqkYEx9a9oCncQzEzpX9A6eDLZECOEUCOfJXApJxl0HLlsjaxxIsgmVGYMTxzNCLr-yy5DneuIm7h_JxPZWD8fEVipHNxu8MbUNuJsl2WOd8KmQ3PwncR');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">USB-C Docking Station</h3>
+                                    <p class="product-price">$159.00</p>
+                                </div>
+                                <p class="product-description">Connect all your devices with a single cable.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-card" data-category="home-office">
+                            <div class="product-image-wrapper">
+                                <div class="product-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrDbfHShtEKSP4YtOAXzkCY1H-1haCpvXUUgMnpbr7N6gXvnarpbenExLsbB7tVR1pN1_JCXcHTA1JKauohwMGsl6wMv2rtaxI6x3Aqk5AlA88BpYVk1142U_Y7MjIr8pLdd1zF4OSgs7WWndFsAvum7BomNzOelraurXGRXEfUm7cMFNhG7QL8Fj-iEkeabUDULP37cdoG9Kwo09ADmLPpzkid0KWhQ_t94IxQoXh2u9NgKHWjWcydZzkQm5TfKpj7L4AbPGu-L1N');"></div>
+                                <div class="favorite-btn-wrapper">
+                                    <button class="favorite-btn">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-title">LED Desk Lamp</h3>
+                                    <p class="product-price">$65.00</p>
+                                </div>
+                                <p class="product-description">Adjustable brightness and color temperature.</p>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="load-more-container">
+                        <button class="btn-secondary">Load More Products</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="brand-footer">
+                        <span class="material-symbols-outlined">token</span>
+                        <span class="brand-name">GlaZone</span>
+                    </div>
+                    <p class="footer-description">
+                        GlaZone is your premier destination for high-quality tech gadgets and workspace accessories. Elevate your daily workflow.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Shop</h4>
+                        <a href="index.html" class="footer-link">New Arrivals</a>
+                        <a href="index.html" class="footer-link">Best Sellers</a>
+                        <a href="index.html" class="footer-link">Sale</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Help</h4>
+                        <a href="#" class="footer-link">Shipping &amp; Returns</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Social</h4>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GlaZone. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div class="cart-drawer" id="cartDrawer">
+            <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+            <div class="cart-drawer-content">
+                <div class="cart-drawer-header">
+                    <h2>Shopping Cart</h2>
+                    <button class="cart-drawer-close" id="cartDrawerClose">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <div class="cart-drawer-items" id="cartDrawerItems">
+                    <div class="cart-drawer-empty">
+                        <span class="material-symbols-outlined empty-cart-icon">shopping_cart</span>
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+                <div class="cart-drawer-footer">
+                    <div class="cart-drawer-total">
+                        <span>Subtotal:</span>
+                        <span id="cartDrawerTotal">$0.00</span>
+                    </div>
+                    <a href="cart.html" class="cart-drawer-checkout-btn">View Cart</a>
+                    <button class="cart-drawer-continue-btn" id="cartDrawerContinue">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

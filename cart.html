@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - GlaZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="cart-header">
+            <div class="cart-header-container">
+                <div class="brand">
+                    <div class="brand-icon">
+                        <span class="material-symbols-outlined">token</span>
+                    </div>
+                    <h2 class="brand-name">TechSpace</h2>
+                </div>
+
+                <div class="cart-header-actions">
+                    <div class="continue-shopping">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                        <a href="index.html">Continue Shopping</a>
+                    </div>
+                    <div class="cart-icon-wrapper">
+                        <button class="cart-icon-btn">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </button>
+                        <div class="cart-count">3</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="cart-main">
+            <div class="cart-container">
+                <div class="cart-items-column">
+                    <div class="cart-heading">
+                        <h1>Your Shopping Cart <span class="item-count">(3 Items)</span></h1>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="item-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJVn_4ByOoTdb7McVRKr0W5MS74iDgC1CunhqjLISqZ2TzIUfm4cL0NjajGRHm_xMtVyPqkBKPylj1IcFwMJflEKGPcw2Xbd72XSy95c10V1Mcq5ghQ_4a88tzqNKzkO__3qUc5MP0p81lqRyJSXwppuYI16Cx5xNhKbAjuyGyBp_uyc_FPfRiU-5UNQsY2p6ChwJBsmdeBmAFLyRyFVRKpDXsXHKeAPXk0tQiQlcrV6OJFO1yrV5v67TT1vmwcf0Lbo3Bf9j_iZBp');"></div>
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-header">
+                                <div class="cart-item-info">
+                                    <h3 class="cart-item-title">Wireless Noise-Cancelling Headphones</h3>
+                                    <p class="cart-item-detail">Color: Matte Black</p>
+                                    <p class="cart-item-detail">Warranty: 2 Years</p>
+                                </div>
+                                <button class="remove-btn" aria-label="Remove item">
+                                    <span class="material-symbols-outlined">delete</span>
+                                </button>
+                            </div>
+                            <div class="cart-item-footer">
+                                <div class="quantity-control">
+                                    <span class="qty-label">Qty:</span>
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn qty-decrease">-</button>
+                                        <input type="text" class="qty-input" value="1" readonly>
+                                        <button class="qty-btn qty-increase">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price">
+                                    <p class="price">$250.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="item-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNMijPYA8nAHUf87j0tsXwW2i7FzTCWr___BLUkpmPxcP16H5A-z--WN7Ruk0-ZP4lWPRI20AJ49hy6ZP_P68CX_vk8VH_FvjSxP1vvddxlV1cgGx-HrEtbNqDzsPelbMrvXGzUAovTDdI2_WvfThSwyXwmGrSfCaJix-Ic8TGvqpw8y52icdgGzytalR3pfm5hxRrjIBz2tOT2_XTIGIyeLA5YosLRjz3WEZAZ17HmxM-5SmKiNf3Vb9UlonW-gZA6A2TuYKZyxVt');"></div>
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-header">
+                                <div class="cart-item-info">
+                                    <h3 class="cart-item-title">Ergonomic Mechanical Keyboard</h3>
+                                    <p class="cart-item-detail">Switch: Brown (Tactile)</p>
+                                    <p class="cart-item-detail">Layout: 75% Compact</p>
+                                </div>
+                                <button class="remove-btn" aria-label="Remove item">
+                                    <span class="material-symbols-outlined">delete</span>
+                                </button>
+                            </div>
+                            <div class="cart-item-footer">
+                                <div class="quantity-control">
+                                    <span class="qty-label">Qty:</span>
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn qty-decrease">-</button>
+                                        <input type="text" class="qty-input" value="1" readonly>
+                                        <button class="qty-btn qty-increase">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price">
+                                    <p class="price">$120.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="item-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUNKjfyab8FzKCGQm9iWpW9uqkxuJsk6g9t2bkpxh7JdOvRbVjfybzH8ehGduGcgWHnawG38ZmNhbTZVvCFdbqK20tZNYcKzBKKe9QC4NWol-euLEwaGDXNVOacTf6NOU9MC8gJ-OcCS9OFeh7mSjYIBRa3QPxq9Y3M-W7MRAhLCFhvKEx--BllmZlrXpksaS5Gre2U4EAa1aqdfJTmSjZFKZSNAKRftW9I9Cu-7kDPaJ7XNFrac_LLQ99RYHRbWGHQTksblFsspc-');"></div>
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-header">
+                                <div class="cart-item-info">
+                                    <h3 class="cart-item-title">USB-C Hub Adapter</h3>
+                                    <p class="cart-item-detail">Ports: 7-in-1 (HDMI, USB 3.0, SD)</p>
+                                </div>
+                                <button class="remove-btn" aria-label="Remove item">
+                                    <span class="material-symbols-outlined">delete</span>
+                                </button>
+                            </div>
+                            <div class="cart-item-footer">
+                                <div class="quantity-control">
+                                    <span class="qty-label">Qty:</span>
+                                    <div class="quantity-selector">
+                                        <button class="qty-btn qty-decrease">-</button>
+                                        <input type="text" class="qty-input" value="1" readonly>
+                                        <button class="qty-btn qty-increase">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price">
+                                    <p class="price">$45.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary-column">
+                    <div class="order-summary">
+                        <h2 class="summary-title">Order Summary</h2>
+
+                        <div class="summary-costs">
+                            <div class="cost-row">
+                                <span class="cost-label">Subtotal</span>
+                                <span class="cost-value" id="subtotal">$415.00</span>
+                            </div>
+                            <div class="cost-row">
+                                <span class="cost-label">Shipping</span>
+                                <span class="cost-value shipping-free">Free</span>
+                            </div>
+                            <div class="cost-row">
+                                <span class="cost-label">Tax Estimate</span>
+                                <span class="cost-value" id="tax">$33.20</span>
+                            </div>
+                        </div>
+
+                        <div class="discount-section">
+                            <label class="discount-label">Discount Code</label>
+                            <div class="discount-input-group">
+                                <input type="text" class="discount-input" placeholder="Enter code">
+                                <button class="discount-apply-btn">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="summary-total">
+                            <span class="total-label">Total</span>
+                            <div class="total-amount">
+                                <span class="total-price" id="total">$448.20</span>
+                                <p class="total-currency">USD</p>
+                            </div>
+                        </div>
+
+                        <button class="checkout-btn">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+
+                        <div class="security-badges">
+                            <div class="secure-checkout">
+                                <span class="material-symbols-outlined">lock</span>
+                                <span>Secure Checkout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

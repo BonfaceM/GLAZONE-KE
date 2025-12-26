@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GlaZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="brand">
+                        <div class="brand-icon">
+                            <span class="material-symbols-outlined">token</span>
+                        </div>
+                        <h2 class="brand-name">GlaZone</h2>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <label class="search-bar">
+                        <div class="search-icon">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input type="text" placeholder="Search products..." class="search-input">
+                    </label>
+                </div>
+
+                <div class="nav-right">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <div class="nav-actions">
+                        <a href="cart.html" class="icon-btn cart-btn">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            <span class="cart-badge"></span>
+                        </a>
+                        <button class="icon-btn theme-toggle" id="themeToggle">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-hero">
+                <div class="page-hero-content">
+                    <h1 class="page-hero-title">Get In Touch</h1>
+                    <p class="page-hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <section class="contact-section">
+                    <div class="contact-grid">
+                        <div class="contact-form-wrapper">
+                            <h2 class="section-title">Send Us a Message</h2>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" id="firstName" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" id="lastName" class="form-input" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                    <input type="tel" id="phone" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select id="subject" class="form-select" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Product Support</option>
+                                        <option value="order">Order Status</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-textarea" rows="6" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary btn-full">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="contact-info-wrapper">
+                            <h2 class="section-title">Contact Information</h2>
+                            <div class="contact-info-cards">
+                                <div class="contact-info-card">
+                                    <div class="contact-info-icon">
+                                        <span class="material-symbols-outlined">location_on</span>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3 class="contact-info-title">Visit Us</h3>
+                                        <p class="contact-info-text">Nairobi<br>Kenya</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-card">
+                                    <div class="contact-info-icon">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3 class="contact-info-title">Email Us</h3>
+                                        <p class="contact-info-text">support@glazone.com<br>sales@glazone.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-card">
+                                    <div class="contact-info-icon">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3 class="contact-info-title">Call Us</h3>
+                                        <p class="contact-info-text">+1 (555) 123-4567<br>Mon-Fri, 9AM-6PM PST</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-card">
+                                    <div class="contact-info-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h3 class="contact-info-title">Business Hours</h3>
+                                        <p class="contact-info-text">Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM<br>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-faq">
+                    <h2 class="section-title centered">Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3 class="faq-question">What is your return policy?</h3>
+                            <p class="faq-answer">We offer a 30-day return policy on all products. Items must be in original condition with all packaging and accessories.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">How long does shipping take?</h3>
+                            <p class="faq-answer">Standard shipping takes 5-7 business days. Express shipping options are available at checkout for faster delivery.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">Do you ship internationally?</h3>
+                            <p class="faq-answer">Yes, we ship to over 50 countries worldwide. International shipping costs and delivery times vary by location.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">What payment methods do you accept?</h3>
+                            <p class="faq-answer">We accept all major credit cards, PayPal, Apple Pay, and Google Pay for your convenience.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="brand-footer">
+                        <span class="material-symbols-outlined">token</span>
+                        <span class="brand-name">glazone</span>
+                    </div>
+                    <p class="footer-description">
+                        glazone is your premier destination for high-quality tech gadgets and workspace accessories. Elevate your daily workflow.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Shop</h4>
+                        <a href="index.html" class="footer-link">New Arrivals</a>
+                        <a href="index.html" class="footer-link">Best Sellers</a>
+                        <a href="index.html" class="footer-link">Sale</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Help</h4>
+                        <a href="#" class="footer-link">Shipping &amp; Returns</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Social</h4>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 glazone. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const contactForm = document.getElementById('contactForm');
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            body.classList.add('dark');
+            updateThemeIcon();
+        }
+
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark');
+            const currentTheme = body.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon();
+        });
+
+        function updateThemeIcon() {
+            const icon = themeToggle.querySelector('.material-symbols-outlined');
+            if (body.classList.contains('dark')) {
+                icon.textContent = 'light_mode';
+            } else {
+                icon.textContent = 'dark_mode';
+            }
+        }
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Thank you, ${firstName}! Your message has been sent successfully. We'll get back to you soon.`);
+
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
